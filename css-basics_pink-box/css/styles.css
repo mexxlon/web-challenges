@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+}
+
+div {
+  font-family: cursive;
+  padding: 8px;
+  height: 150px;
+  width: 150px;
+  background-color: hotpink;
+  text-decoration-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
