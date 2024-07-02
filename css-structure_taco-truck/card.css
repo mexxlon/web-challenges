@@ -1,8 +1,6 @@
 section {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  height: 40%;
+  max-width: 300px;
+  min-height: 160px;
   margin: 20px;
   padding: 20px;
   gap: 1px;
@@ -13,4 +11,15 @@ section {
 
 ul {
   list-style: none;
+}
+
+.cards-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card h4,
+.card p {
+  margin: 1px;
+  font-size: 12px;
 }
