@@ -2,6 +2,7 @@
 /* You will need to add more imports eventually.
 /* -------------------------------------------------------- */
 
+@import "./card.css";
 @import "./theme.css";
 
 /* ------------------------------------------------------------------------------ */
@@ -13,6 +14,16 @@
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  width: 50%;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -22,5 +33,26 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: system-ui;
-  background: var(--body-bg);
+  background-color: var(--body-bg);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  height: fit-content;
+  background-color: var(--main-bg);
+  color: var(--main-text);
+}
+
+h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: fit-content;
+  padding: 6px 10px;
+  background-color: var(--main-title-bg);
 }
