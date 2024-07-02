@@ -1,4 +1,11 @@
-console.clear();
+const coding = "Happy coding!";
+console.log(coding);
+
+const hacking = "Happy hacking!";
+console.log(hacking);
+
+const error = "This is an error!";
+console.error(error);
 
 // The exercise starts here!
 
