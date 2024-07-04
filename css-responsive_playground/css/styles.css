@@ -112,4 +112,37 @@ h1 {
   width: 100%;
 }
 
-@media();
+@media (max-width: 599px) {
+  .cat-pics .small {
+    display: block;
+  }
+  .cat-pics .medium {
+    display: none;
+  }
+  .cat-pics .large {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .cat-pics .small {
+    display: none;
+  }
+  .cat-pics .medium {
+    display: block;
+  }
+  .cat-pics .large {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .cat-pics .small {
+    display: none;
+  }
+  .cat-pics .medium {
+    display: none;
+  }
+  .cat-pics .large {
+    display: block;
+  }
+}
