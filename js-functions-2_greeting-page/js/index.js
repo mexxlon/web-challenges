@@ -21,10 +21,36 @@ Change the contents of this page depending on the current day and time.
 */
 
 const display = document.querySelector('[data-js="display"]');
-new Date().getHours(); ////////////////////////////////WEITER
+
+function getGreeting() {
+  const dayTime = new Date().getHours();
+
+  if (dayTime >= 6 && dayTime < 12) {
+    return "Good Morning!";
+  } else if (dayTime >= 12 && dayTime < 18) {
+    return "Good Afternoon!";
+  } else if (dayTime >= 18 && dayTime < 22) {
+    return "Good Evening!";
+  } else {
+    return "Good Night!";
+  }
+}
+getGreeting();
 
 function getDayColor() {
-  // Code here
+  const weekDay = new Date().getDay();
+  switch (weekDay) {
+    case 0:
+    case 6:
+      return "hotpink";
+    case 1:
+      return "darkgray";
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+      return "lightblue";
+  }
 }
 
 display.textContent = getGreeting();
