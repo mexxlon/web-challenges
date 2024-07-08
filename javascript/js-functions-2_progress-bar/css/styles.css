@@ -51,6 +51,6 @@ ul {
   left: 0;
   height: 10px;
   width: 0%;
-  background-color: red;
+  background-color: #50c878;
   transition: width 0.05s ease;
 }
