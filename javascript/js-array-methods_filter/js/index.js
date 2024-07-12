@@ -27,21 +27,22 @@ const cards = [
 const onlyCardWithIdTwo = cards.filter((card) => {
   return card.id === "2";
 });
-console.log(onlyCardWithIdTwo);
+//console.log(onlyCardWithIdTwo);
 
 const allCardsWith3Tags = cards.filter((card) => {
   return card.tags.length === 3;
 });
-console.log(allCardsWith3Tags);
+//console.log(allCardsWith3Tags);
 
 const allCardsThatAreNotBookmarked = cards.filter((card) => {
   return card.isBookmarked === false;
 });
-console.log(allCardsThatAreNotBookmarked);
+//console.log(allCardsThatAreNotBookmarked);
 
 const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter((card) => {
   return (
-    card.isBookmarked === true && (card.tags === "html" || card.tags === "js")
+    card.isBookmarked === true &&
+    (card.tags.includes("html") || card.tags.includes("js"))
   );
 });
 
