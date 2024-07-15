@@ -26,21 +26,22 @@ const employeeYoungerThan18 = employees.some((employee) => employee.age < 18);
 // Hint: use every()
 
 const everyEmployeeHasPhoneNumber = employees.every(
-  (employee) => employee.phone === true
+  (employee) => employee.phone
 );
 
 //----------------------------------------
 // QUESTION 5: Does every id start with '0'?
 // Hint: Use every()
 
-const everyIdStartsWith0 = employees.every((employee) => id.includes("0"));
-
+const everyIdStartsWith0 = employees.every((employee) =>
+  employee.id.startsWith("0")
+);
 //----------------------------------------
 // QUESTION 6: Has every employee a first name AND a last name?
 // Hint: use every()
 
 const everyEmployeeHasFirstAndLastName = employees.every(
-  (employee) => employee.includes("firstName") && employee.includes("lastName")
+  (employee) => employee.firstName && employee.lastName
 );
 
 //----------------------------------------
@@ -65,7 +66,7 @@ const employeeWithId = employees.find(
 
 const ednaInvestment = employees.find(
   (employee) =>
-    employee.firstName === "Ednda" &&
+    employee.firstName === "Edna" &&
     employee.profession === "Investment Manager"
 );
 
@@ -73,13 +74,24 @@ const ednaInvestment = employees.find(
 // QUESTION 10: We need a new employees array now sorted by age ascending (1 -> 100)
 // Hint: Use toSorted()
 
-const employeesSortedByAge = null;
+const employeesSortedByAge = employees.toSorted((a, b) => a.age - b.age);
 
 //----------------------------------------
 // QUESTION 11: We want a new employees array sorted by last name descending (Z -> A)
 // Hint use toSorted()
 
-const employeesSortedByLastName = null;
+const employeesSortedByLastName = employees.toSorted((a, b) => {
+  const lastNameA = a.lastName.toUpperCase();
+  const lastNameB = b.lastName.toUpperCase();
+
+  if (lastNameA < lastNameB) {
+    return 1;
+  } else if (lastNameA > lastNameB) {
+    return -1;
+  } else {
+    return 0;
+  }
+});
 
 // Great! 🎉 You got it! 🚀 Now you can read the solution of the letter puzzle. 💪
 
