@@ -24,7 +24,7 @@ export { age, contact };
 // all other items should go into a variable called "restOfList".
 
 const list = ["one", "two", "three", "four", "five"];
-const { first, second, ...restOfList } = list;
+export const [first, second, ...restOfList] = list;
 
 // EXERCISE 3
 // a) The `add` function does not work because it needs an array as argument.
