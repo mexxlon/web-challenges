@@ -2,6 +2,10 @@ import React from "react";
 import "./styles.css";
 
 export default function App() {
+  const handleClick = () => {
+    console.log("ITS WORKING!");
+  };
+
   return (
     <Button
       disabled={false}
@@ -39,6 +43,3 @@ function Button({
     </button>
   );
 }
-const handleClick = () => {
-  console.log("ITS WORKING!");
-};
