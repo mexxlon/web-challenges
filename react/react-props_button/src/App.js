@@ -10,11 +10,20 @@ export default function App() {
       backgroundColor="black"
       width="400px"
       height="100px"
+      onClick={handleClick}
     />
   );
 }
 
-function Button({ color, disabled, text, backgroundColor, width, height }) {
+function Button({
+  color,
+  disabled,
+  text,
+  backgroundColor,
+  width,
+  height,
+  onClick,
+}) {
   return (
     <button
       style={{
@@ -23,9 +32,13 @@ function Button({ color, disabled, text, backgroundColor, width, height }) {
         width: width,
         height: height,
       }}
+      onClick={onClick}
       disabled={disabled}
     >
       {text}
     </button>
   );
 }
+const handleClick = () => {
+  console.log("ITS WORKING!");
+};
