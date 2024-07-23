@@ -1,0 +1,15 @@
+:root {
+  --color-banana: ivory;
+  --color-strawberry: lightcoral;
+  --color-avocado: lightgreen;
+  --color-mango: #f7e300;
+  --color-blueberry: darkblue;
+}
+
+.card {
+  width: 70%;
+  padding: 20px;
+  margin-inline: auto;
+  margin-block: 20px;
+  background-color: var(--card-background);
+}
