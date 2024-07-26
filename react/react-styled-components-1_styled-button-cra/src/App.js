@@ -1,11 +1,16 @@
-import { StyledButton, StyledPrimaryButton } from "./components/StyledButton";
+import {
+  StyledButton,
+  StyledExtendedButton,
+  StyledPrimaryButton,
+} from "./components/StyledButton";
 
 function App() {
   return (
     <main>
       <h1>Hello from React</h1>
       <StyledButton>Default Button </StyledButton>
-      <StyledPrimaryButton>This is the better button</StyledPrimaryButton>
+      <StyledExtendedButton>next one</StyledExtendedButton>
+      <StyledPrimaryButton>Best button in the fookin world</StyledPrimaryButton>
     </main>
   );
 }

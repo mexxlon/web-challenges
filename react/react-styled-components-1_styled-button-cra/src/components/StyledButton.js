@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
   background-color: #4caf50; /* Green */
   border: none;
   color: white;
@@ -12,8 +12,9 @@ const StyledButton = styled.button`
   margin: 4px 2px;
   cursor: pointer;
 `;
+export const StyledExtendedButton = styled(StyledButton)``;
 
-const StyledPrimaryButton = styled.button`
+export const StyledPrimaryButton = styled.button`
   background-color: #333; /* Schwarz */
   border: 2px solid #4caf50; /* Grüner Rand */
   color: #4caf50; /* Grüner Text */
@@ -40,5 +41,3 @@ const StyledPrimaryButton = styled.button`
     transform: scale(0.95);
   }
 `;
-
-export { StyledButton, StyledPrimaryButton };
