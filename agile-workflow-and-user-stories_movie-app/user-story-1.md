@@ -1,10 +1,10 @@
 # Title
 
-browsing through movies
+Viewing Detailed Movie List
 
 ## Value Proposition
 
-**As a** movie lover <br>
+**As a** Movie lover <br>
 **I want to** have a well organized list of movies <br>
 **so that** i can browse through them and select one <br>
 
